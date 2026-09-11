@@ -1,0 +1,1222 @@
+[
+  {
+    "id": "lun-01",
+    "jour_semaine": "lundi",
+    "heure_debut": "04:00",
+    "heure_fin": "04:06",
+    "nom_activite": "Sport rapide (6 min)",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "lun-02",
+    "jour_semaine": "lundi",
+    "heure_debut": "04:06",
+    "heure_fin": "04:26",
+    "nom_activite": "Douche",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "lun-03",
+    "jour_semaine": "lundi",
+    "heure_debut": "04:26",
+    "heure_fin": "05:30",
+    "nom_activite": "Lecture biblique et priere",
+    "categorie": "priere",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "lun-04",
+    "jour_semaine": "lundi",
+    "heure_debut": "05:30",
+    "heure_fin": "07:00",
+    "nom_activite": "EL48 - Anki + reprise du cours",
+    "categorie": "travail_personnel",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "lun-05",
+    "jour_semaine": "lundi",
+    "heure_debut": "07:00",
+    "heure_fin": "07:30",
+    "nom_activite": "Collation et preparation",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "lun-06",
+    "jour_semaine": "lundi",
+    "heure_debut": "07:30",
+    "heure_fin": "08:00",
+    "nom_activite": "Trajet vers l'UTBM (CROUS -> UTBM)",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "lun-07",
+    "jour_semaine": "lundi",
+    "heure_debut": "08:00",
+    "heure_fin": "10:00",
+    "nom_activite": "EL48 CM1",
+    "categorie": "cours_tp",
+    "salle": "I102",
+    "semaine_variante": null
+  },
+  {
+    "id": "lun-08",
+    "jour_semaine": "lundi",
+    "heure_debut": "10:00",
+    "heure_fin": "10:15",
+    "nom_activite": "Pause",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "lun-09",
+    "jour_semaine": "lundi",
+    "heure_debut": "10:15",
+    "heure_fin": "12:15",
+    "nom_activite": "SY45 CM1",
+    "categorie": "cours_tp",
+    "salle": "A219",
+    "semaine_variante": null
+  },
+  {
+    "id": "lun-10",
+    "jour_semaine": "lundi",
+    "heure_debut": "12:15",
+    "heure_fin": "13:00",
+    "nom_activite": "Repas principal",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "lun-11",
+    "jour_semaine": "lundi",
+    "heure_debut": "13:00",
+    "heure_fin": "16:00",
+    "nom_activite": "EL47 TP1 (groupe A)",
+    "categorie": "cours_tp",
+    "salle": "B005",
+    "semaine_variante": "A"
+  },
+  {
+    "id": "lun-12",
+    "jour_semaine": "lundi",
+    "heure_debut": "13:00",
+    "heure_fin": "16:00",
+    "nom_activite": "IF40 TP1 (groupe B)",
+    "categorie": "cours_tp",
+    "salle": "B123",
+    "semaine_variante": "B"
+  },
+  {
+    "id": "lun-13",
+    "jour_semaine": "lundi",
+    "heure_debut": "16:00",
+    "heure_fin": "16:15",
+    "nom_activite": "Pause",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "lun-14",
+    "jour_semaine": "lundi",
+    "heure_debut": "16:15",
+    "heure_fin": "18:15",
+    "nom_activite": "IF40 TD1",
+    "categorie": "cours_tp",
+    "salle": "A112",
+    "semaine_variante": null
+  },
+  {
+    "id": "lun-15",
+    "jour_semaine": "lundi",
+    "heure_debut": "18:15",
+    "heure_fin": "19:15",
+    "nom_activite": "LE01 TP5",
+    "categorie": "cours_tp",
+    "salle": "A217",
+    "semaine_variante": null
+  },
+  {
+    "id": "lun-16",
+    "jour_semaine": "lundi",
+    "heure_debut": "19:15",
+    "heure_fin": "19:45",
+    "nom_activite": "Retour au CROUS (UTBM -> CROUS)",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "lun-17",
+    "jour_semaine": "lundi",
+    "heure_debut": "19:45",
+    "heure_fin": "20:15",
+    "nom_activite": "Diner principal",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "lun-18",
+    "jour_semaine": "lundi",
+    "heure_debut": "20:15",
+    "heure_fin": "20:45",
+    "nom_activite": "EL48 - revision rapide du jour",
+    "categorie": "travail_personnel",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "lun-19",
+    "jour_semaine": "lundi",
+    "heure_debut": "20:45",
+    "heure_fin": "21:00",
+    "nom_activite": "Temps libre",
+    "categorie": "loisir",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "lun-20",
+    "jour_semaine": "lundi",
+    "heure_debut": "21:00",
+    "heure_fin": "21:30",
+    "nom_activite": "Appel famille (court)",
+    "categorie": "loisir",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "lun-21",
+    "jour_semaine": "lundi",
+    "heure_debut": "21:30",
+    "heure_fin": "22:00",
+    "nom_activite": "Preparation au sommeil",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "mar-01",
+    "jour_semaine": "mardi",
+    "heure_debut": "04:00",
+    "heure_fin": "04:06",
+    "nom_activite": "Sport rapide (6 min)",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "mar-02",
+    "jour_semaine": "mardi",
+    "heure_debut": "04:06",
+    "heure_fin": "04:26",
+    "nom_activite": "Douche",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "mar-03",
+    "jour_semaine": "mardi",
+    "heure_debut": "04:26",
+    "heure_fin": "05:30",
+    "nom_activite": "Lecture biblique et priere",
+    "categorie": "priere",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "mar-04",
+    "jour_semaine": "mardi",
+    "heure_debut": "05:30",
+    "heure_fin": "07:00",
+    "nom_activite": "IF40 - preparation CM (DSP / code C)",
+    "categorie": "travail_personnel",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "mar-05",
+    "jour_semaine": "mardi",
+    "heure_debut": "07:00",
+    "heure_fin": "08:00",
+    "nom_activite": "Collation et trajet",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "mar-06",
+    "jour_semaine": "mardi",
+    "heure_debut": "08:00",
+    "heure_fin": "10:00",
+    "nom_activite": "EL48 TD1",
+    "categorie": "cours_tp",
+    "salle": "A111",
+    "semaine_variante": null
+  },
+  {
+    "id": "mar-07",
+    "jour_semaine": "mardi",
+    "heure_debut": "10:00",
+    "heure_fin": "10:15",
+    "nom_activite": "Pause",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "mar-08",
+    "jour_semaine": "mardi",
+    "heure_debut": "10:15",
+    "heure_fin": "12:15",
+    "nom_activite": "IF40 CM1",
+    "categorie": "cours_tp",
+    "salle": "A101",
+    "semaine_variante": null
+  },
+  {
+    "id": "mar-09",
+    "jour_semaine": "mardi",
+    "heure_debut": "12:15",
+    "heure_fin": "13:00",
+    "nom_activite": "Repas principal",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "mar-10",
+    "jour_semaine": "mardi",
+    "heure_debut": "13:00",
+    "heure_fin": "14:00",
+    "nom_activite": "Repos et lecture legere",
+    "categorie": "loisir",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "mar-11",
+    "jour_semaine": "mardi",
+    "heure_debut": "14:00",
+    "heure_fin": "16:00",
+    "nom_activite": "SY45 TD1",
+    "categorie": "cours_tp",
+    "salle": "A219",
+    "semaine_variante": null
+  },
+  {
+    "id": "mar-12",
+    "jour_semaine": "mardi",
+    "heure_debut": "16:00",
+    "heure_fin": "16:30",
+    "nom_activite": "Pause et retour",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "mar-13",
+    "jour_semaine": "mardi",
+    "heure_debut": "16:30",
+    "heure_fin": "18:00",
+    "nom_activite": "EL47 - serie d'exercices",
+    "categorie": "travail_personnel",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "mar-14",
+    "jour_semaine": "mardi",
+    "heure_debut": "18:00",
+    "heure_fin": "19:00",
+    "nom_activite": "Temps libre / detente",
+    "categorie": "loisir",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "mar-15",
+    "jour_semaine": "mardi",
+    "heure_debut": "19:00",
+    "heure_fin": "19:45",
+    "nom_activite": "Diner principal",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "mar-16",
+    "jour_semaine": "mardi",
+    "heure_debut": "19:45",
+    "heure_fin": "20:45",
+    "nom_activite": "Appel famille",
+    "categorie": "loisir",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "mar-17",
+    "jour_semaine": "mardi",
+    "heure_debut": "20:45",
+    "heure_fin": "21:30",
+    "nom_activite": "Lecture legere et detente",
+    "categorie": "loisir",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "mar-18",
+    "jour_semaine": "mardi",
+    "heure_debut": "21:30",
+    "heure_fin": "22:00",
+    "nom_activite": "Preparation au sommeil",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "mer-01",
+    "jour_semaine": "mercredi",
+    "heure_debut": "04:00",
+    "heure_fin": "04:06",
+    "nom_activite": "Sport rapide (6 min)",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "mer-02",
+    "jour_semaine": "mercredi",
+    "heure_debut": "04:06",
+    "heure_fin": "04:26",
+    "nom_activite": "Douche",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "mer-03",
+    "jour_semaine": "mercredi",
+    "heure_debut": "04:26",
+    "heure_fin": "05:30",
+    "nom_activite": "Lecture biblique et priere",
+    "categorie": "priere",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "mer-04",
+    "jour_semaine": "mercredi",
+    "heure_debut": "05:30",
+    "heure_fin": "07:00",
+    "nom_activite": "Temps libre / matinee calme",
+    "categorie": "loisir",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "mer-05",
+    "jour_semaine": "mercredi",
+    "heure_debut": "07:00",
+    "heure_fin": "08:30",
+    "nom_activite": "SY45 - exercices et Anki",
+    "categorie": "travail_personnel",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "mer-06",
+    "jour_semaine": "mercredi",
+    "heure_debut": "08:30",
+    "heure_fin": "09:00",
+    "nom_activite": "Collation",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "mer-07",
+    "jour_semaine": "mercredi",
+    "heure_debut": "09:00",
+    "heure_fin": "10:00",
+    "nom_activite": "Repos et lecture legere",
+    "categorie": "loisir",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "mer-08",
+    "jour_semaine": "mercredi",
+    "heure_debut": "10:00",
+    "heure_fin": "10:15",
+    "nom_activite": "Pause",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "mer-09",
+    "jour_semaine": "mercredi",
+    "heure_debut": "10:15",
+    "heure_fin": "12:15",
+    "nom_activite": "EL47 CM1",
+    "categorie": "cours_tp",
+    "salle": "I102",
+    "semaine_variante": null
+  },
+  {
+    "id": "mer-10",
+    "jour_semaine": "mercredi",
+    "heure_debut": "12:15",
+    "heure_fin": "13:00",
+    "nom_activite": "Repas principal",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "mer-11",
+    "jour_semaine": "mercredi",
+    "heure_debut": "13:00",
+    "heure_fin": "14:00",
+    "nom_activite": "Repos et preparation",
+    "categorie": "loisir",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "mer-12",
+    "jour_semaine": "mercredi",
+    "heure_debut": "14:00",
+    "heure_fin": "16:00",
+    "nom_activite": "LE01 TD2",
+    "categorie": "cours_tp",
+    "salle": "A217",
+    "semaine_variante": null
+  },
+  {
+    "id": "mer-13",
+    "jour_semaine": "mercredi",
+    "heure_debut": "16:00",
+    "heure_fin": "16:30",
+    "nom_activite": "Pause",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "mer-14",
+    "jour_semaine": "mercredi",
+    "heure_debut": "16:30",
+    "heure_fin": "18:00",
+    "nom_activite": "GE06 - lecture fondements marketing",
+    "categorie": "travail_personnel",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "mer-15",
+    "jour_semaine": "mercredi",
+    "heure_debut": "18:00",
+    "heure_fin": "19:00",
+    "nom_activite": "Temps libre / detente",
+    "categorie": "loisir",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "mer-16",
+    "jour_semaine": "mercredi",
+    "heure_debut": "19:00",
+    "heure_fin": "19:45",
+    "nom_activite": "Diner principal",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "mer-17",
+    "jour_semaine": "mercredi",
+    "heure_debut": "19:45",
+    "heure_fin": "20:45",
+    "nom_activite": "Appel famille et proches",
+    "categorie": "loisir",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "mer-18",
+    "jour_semaine": "mercredi",
+    "heure_debut": "20:45",
+    "heure_fin": "21:30",
+    "nom_activite": "Detente calme",
+    "categorie": "loisir",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "mer-19",
+    "jour_semaine": "mercredi",
+    "heure_debut": "21:30",
+    "heure_fin": "22:00",
+    "nom_activite": "Preparation au sommeil",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "jeu-01",
+    "jour_semaine": "jeudi",
+    "heure_debut": "04:00",
+    "heure_fin": "04:06",
+    "nom_activite": "Sport rapide (6 min)",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "jeu-02",
+    "jour_semaine": "jeudi",
+    "heure_debut": "04:06",
+    "heure_fin": "04:26",
+    "nom_activite": "Douche",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "jeu-03",
+    "jour_semaine": "jeudi",
+    "heure_debut": "04:26",
+    "heure_fin": "05:30",
+    "nom_activite": "Lecture biblique et priere",
+    "categorie": "priere",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "jeu-04",
+    "jour_semaine": "jeudi",
+    "heure_debut": "05:30",
+    "heure_fin": "07:00",
+    "nom_activite": "Temps libre",
+    "categorie": "loisir",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "jeu-05",
+    "jour_semaine": "jeudi",
+    "heure_debut": "07:00",
+    "heure_fin": "08:00",
+    "nom_activite": "Collation et trajet",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "jeu-06",
+    "jour_semaine": "jeudi",
+    "heure_debut": "08:00",
+    "heure_fin": "09:30",
+    "nom_activite": "IF40 - finalisation projet hebdomadaire",
+    "categorie": "travail_personnel",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "jeu-07",
+    "jour_semaine": "jeudi",
+    "heure_debut": "09:30",
+    "heure_fin": "10:15",
+    "nom_activite": "Pause et trajet",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "jeu-08",
+    "jour_semaine": "jeudi",
+    "heure_debut": "10:15",
+    "heure_fin": "13:15",
+    "nom_activite": "SY45 TP1 (groupe A)",
+    "categorie": "cours_tp",
+    "salle": "B139y",
+    "semaine_variante": "A"
+  },
+  {
+    "id": "jeu-09",
+    "jour_semaine": "jeudi",
+    "heure_debut": "10:15",
+    "heure_fin": "13:15",
+    "nom_activite": "EL48 TP2 (groupe B)",
+    "categorie": "cours_tp",
+    "salle": "B003-B005",
+    "semaine_variante": "B"
+  },
+  {
+    "id": "jeu-10",
+    "jour_semaine": "jeudi",
+    "heure_debut": "13:15",
+    "heure_fin": "14:00",
+    "nom_activite": "Repas principal",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "jeu-11",
+    "jour_semaine": "jeudi",
+    "heure_debut": "14:00",
+    "heure_fin": "15:30",
+    "nom_activite": "EL48 - reprise du TP + Anki_Exo_2",
+    "categorie": "travail_personnel",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "jeu-12",
+    "jour_semaine": "jeudi",
+    "heure_debut": "15:30",
+    "heure_fin": "16:00",
+    "nom_activite": "Pause",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "jeu-13",
+    "jour_semaine": "jeudi",
+    "heure_debut": "16:00",
+    "heure_fin": "17:00",
+    "nom_activite": "Appel famille",
+    "categorie": "loisir",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "jeu-14",
+    "jour_semaine": "jeudi",
+    "heure_debut": "17:00",
+    "heure_fin": "18:00",
+    "nom_activite": "Temps libre / detente",
+    "categorie": "loisir",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "jeu-15",
+    "jour_semaine": "jeudi",
+    "heure_debut": "18:00",
+    "heure_fin": "18:45",
+    "nom_activite": "Diner principal",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "jeu-16",
+    "jour_semaine": "jeudi",
+    "heure_debut": "18:45",
+    "heure_fin": "20:15",
+    "nom_activite": "Creation musicale",
+    "categorie": "loisir",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "jeu-17",
+    "jour_semaine": "jeudi",
+    "heure_debut": "20:15",
+    "heure_fin": "21:30",
+    "nom_activite": "Divertissement calme et detente",
+    "categorie": "loisir",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "jeu-18",
+    "jour_semaine": "jeudi",
+    "heure_debut": "21:30",
+    "heure_fin": "22:00",
+    "nom_activite": "Preparation au sommeil",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "ven-01",
+    "jour_semaine": "vendredi",
+    "heure_debut": "04:00",
+    "heure_fin": "04:06",
+    "nom_activite": "Sport rapide (6 min)",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "ven-02",
+    "jour_semaine": "vendredi",
+    "heure_debut": "04:06",
+    "heure_fin": "04:26",
+    "nom_activite": "Douche",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "ven-03",
+    "jour_semaine": "vendredi",
+    "heure_debut": "04:26",
+    "heure_fin": "05:30",
+    "nom_activite": "Lecture biblique et priere",
+    "categorie": "priere",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "ven-04",
+    "jour_semaine": "vendredi",
+    "heure_debut": "05:30",
+    "heure_fin": "07:00",
+    "nom_activite": "SY45 - finalisation exercices de la semaine",
+    "categorie": "travail_personnel",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "ven-05",
+    "jour_semaine": "vendredi",
+    "heure_debut": "07:00",
+    "heure_fin": "08:00",
+    "nom_activite": "Collation et trajet",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "ven-06",
+    "jour_semaine": "vendredi",
+    "heure_debut": "08:00",
+    "heure_fin": "10:00",
+    "nom_activite": "EL47 TD3",
+    "categorie": "cours_tp",
+    "salle": "A102",
+    "semaine_variante": null
+  },
+  {
+    "id": "ven-07",
+    "jour_semaine": "vendredi",
+    "heure_debut": "10:00",
+    "heure_fin": "10:15",
+    "nom_activite": "Pause",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "ven-08",
+    "jour_semaine": "vendredi",
+    "heure_debut": "10:15",
+    "heure_fin": "11:45",
+    "nom_activite": "EL47 - bilan et approfondissement",
+    "categorie": "travail_personnel",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "ven-09",
+    "jour_semaine": "vendredi",
+    "heure_debut": "11:45",
+    "heure_fin": "12:45",
+    "nom_activite": "Repos et lecture legere",
+    "categorie": "loisir",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "ven-10",
+    "jour_semaine": "vendredi",
+    "heure_debut": "12:45",
+    "heure_fin": "14:15",
+    "nom_activite": "LE01 - vocabulaire, grammaire, expression",
+    "categorie": "travail_personnel",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "ven-11",
+    "jour_semaine": "vendredi",
+    "heure_debut": "14:15",
+    "heure_fin": "14:30",
+    "nom_activite": "Trajet",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "ven-12",
+    "jour_semaine": "vendredi",
+    "heure_debut": "14:30",
+    "heure_fin": "16:00",
+    "nom_activite": "GE06 CM1",
+    "categorie": "cours_tp",
+    "salle": "A218",
+    "semaine_variante": null
+  },
+  {
+    "id": "ven-13",
+    "jour_semaine": "vendredi",
+    "heure_debut": "16:00",
+    "heure_fin": "16:15",
+    "nom_activite": "Pause",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "ven-14",
+    "jour_semaine": "vendredi",
+    "heure_debut": "16:15",
+    "heure_fin": "18:15",
+    "nom_activite": "GE06 TD1",
+    "categorie": "cours_tp",
+    "salle": "A218",
+    "semaine_variante": null
+  },
+  {
+    "id": "ven-15",
+    "jour_semaine": "vendredi",
+    "heure_debut": "18:15",
+    "heure_fin": "18:45",
+    "nom_activite": "Retour au CROUS (UTBM -> CROUS)",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "ven-16",
+    "jour_semaine": "vendredi",
+    "heure_debut": "18:45",
+    "heure_fin": "19:30",
+    "nom_activite": "Diner principal",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "ven-17",
+    "jour_semaine": "vendredi",
+    "heure_debut": "19:30",
+    "heure_fin": "20:00",
+    "nom_activite": "GE06 - revision rapide du jour",
+    "categorie": "travail_personnel",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "ven-18",
+    "jour_semaine": "vendredi",
+    "heure_debut": "20:00",
+    "heure_fin": "20:30",
+    "nom_activite": "Temps libre",
+    "categorie": "loisir",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "ven-19",
+    "jour_semaine": "vendredi",
+    "heure_debut": "20:30",
+    "heure_fin": "21:15",
+    "nom_activite": "Appel famille prolonge",
+    "categorie": "loisir",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "ven-20",
+    "jour_semaine": "vendredi",
+    "heure_debut": "21:15",
+    "heure_fin": "22:00",
+    "nom_activite": "Detente et preparation du week-end",
+    "categorie": "loisir",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "sam-01",
+    "jour_semaine": "samedi",
+    "heure_debut": "05:30",
+    "heure_fin": "05:36",
+    "nom_activite": "Sport rapide (6 min)",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "sam-02",
+    "jour_semaine": "samedi",
+    "heure_debut": "05:36",
+    "heure_fin": "05:56",
+    "nom_activite": "Douche",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "sam-03",
+    "jour_semaine": "samedi",
+    "heure_debut": "05:56",
+    "heure_fin": "07:00",
+    "nom_activite": "Lecture biblique et priere",
+    "categorie": "priere",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "sam-04",
+    "jour_semaine": "samedi",
+    "heure_debut": "07:00",
+    "heure_fin": "07:30",
+    "nom_activite": "Collation",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "sam-05",
+    "jour_semaine": "samedi",
+    "heure_debut": "07:30",
+    "heure_fin": "10:30",
+    "nom_activite": "EL48 - session longue : TD + Anki_Exo_2",
+    "categorie": "travail_personnel",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "sam-06",
+    "jour_semaine": "samedi",
+    "heure_debut": "10:30",
+    "heure_fin": "10:45",
+    "nom_activite": "Pause",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "sam-07",
+    "jour_semaine": "samedi",
+    "heure_debut": "10:45",
+    "heure_fin": "13:45",
+    "nom_activite": "SY45 - session longue : automates, exercices",
+    "categorie": "travail_personnel",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "sam-08",
+    "jour_semaine": "samedi",
+    "heure_debut": "13:45",
+    "heure_fin": "14:30",
+    "nom_activite": "Repas principal et repos",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "sam-09",
+    "jour_semaine": "samedi",
+    "heure_debut": "14:30",
+    "heure_fin": "16:00",
+    "nom_activite": "GE06 - lecture approfondie et cas pratiques",
+    "categorie": "travail_personnel",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "sam-10",
+    "jour_semaine": "samedi",
+    "heure_debut": "16:00",
+    "heure_fin": "17:00",
+    "nom_activite": "Temps libre / detente",
+    "categorie": "loisir",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "sam-11",
+    "jour_semaine": "samedi",
+    "heure_debut": "17:00",
+    "heure_fin": "19:00",
+    "nom_activite": "Creation musicale : session longue",
+    "categorie": "loisir",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "sam-12",
+    "jour_semaine": "samedi",
+    "heure_debut": "19:00",
+    "heure_fin": "19:30",
+    "nom_activite": "Diner principal",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "sam-13",
+    "jour_semaine": "samedi",
+    "heure_debut": "19:30",
+    "heure_fin": "20:30",
+    "nom_activite": "Appel familial prolonge",
+    "categorie": "loisir",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "sam-14",
+    "jour_semaine": "samedi",
+    "heure_debut": "20:30",
+    "heure_fin": "22:00",
+    "nom_activite": "Detente et preparation du dimanche",
+    "categorie": "loisir",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "dim-01",
+    "jour_semaine": "dimanche",
+    "heure_debut": "06:00",
+    "heure_fin": "06:06",
+    "nom_activite": "Sport rapide (6 min)",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "dim-02",
+    "jour_semaine": "dimanche",
+    "heure_debut": "06:06",
+    "heure_fin": "06:26",
+    "nom_activite": "Douche",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "dim-03",
+    "jour_semaine": "dimanche",
+    "heure_debut": "06:26",
+    "heure_fin": "07:30",
+    "nom_activite": "Lecture biblique et priere",
+    "categorie": "priere",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "dim-04",
+    "jour_semaine": "dimanche",
+    "heure_debut": "07:30",
+    "heure_fin": "08:00",
+    "nom_activite": "Collation",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "dim-05",
+    "jour_semaine": "dimanche",
+    "heure_debut": "08:00",
+    "heure_fin": "12:00",
+    "nom_activite": "Emissions chretiennes (temps spirituel)",
+    "categorie": "priere",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "dim-06",
+    "jour_semaine": "dimanche",
+    "heure_debut": "12:00",
+    "heure_fin": "12:30",
+    "nom_activite": "Repas principal",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "dim-07",
+    "jour_semaine": "dimanche",
+    "heure_debut": "12:30",
+    "heure_fin": "15:30",
+    "nom_activite": "EL47 - revision complete",
+    "categorie": "travail_personnel",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "dim-08",
+    "jour_semaine": "dimanche",
+    "heure_debut": "15:30",
+    "heure_fin": "15:45",
+    "nom_activite": "Pause",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "dim-09",
+    "jour_semaine": "dimanche",
+    "heure_debut": "15:45",
+    "heure_fin": "18:45",
+    "nom_activite": "IF40 - DSP, TP, projet",
+    "categorie": "travail_personnel",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "dim-10",
+    "jour_semaine": "dimanche",
+    "heure_debut": "18:45",
+    "heure_fin": "19:15",
+    "nom_activite": "Diner principal",
+    "categorie": "neutre",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "dim-11",
+    "jour_semaine": "dimanche",
+    "heure_debut": "19:15",
+    "heure_fin": "21:45",
+    "nom_activite": "LE01 - comprehension ecrite et orale approfondie",
+    "categorie": "travail_personnel",
+    "salle": null,
+    "semaine_variante": null
+  },
+  {
+    "id": "dim-12",
+    "jour_semaine": "dimanche",
+    "heure_debut": "21:45",
+    "heure_fin": "22:00",
+    "nom_activite": "Detente et appel rapide",
+    "categorie": "loisir",
+    "salle": null,
+    "semaine_variante": null
+  }
+]

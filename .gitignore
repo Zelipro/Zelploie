@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+
+# Flet build output
+/build/
+/dist/
+
+# Local runtime data (jamais commité : contient l'état réel de Zeli)
+*.db
+*.sqlite3
+zelploie_local.db
+device_id.txt
+
+# Secrets
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
