@@ -105,7 +105,7 @@ def test_resolve_state_a_acquitter_juste_apres_fin_sans_creneau_suivant(conn, te
 
 def test_resolve_state_libre_si_dernier_creneau_deja_acquitte(conn, template):
     ensure_occurrences_materialized(conn, template, date(2026, 9, 7), date(2026, 9, 8))
-    last_id = "lun-21_2026-09-07"  # "Preparation au sommeil" du lundi
+    last_id = "lundi-2130-2200_2026-09-07"  # "Preparation au sommeil" du lundi
     assert local_db.get_occurrence(conn, last_id) is not None
     local_db.mark_acquitte(conn, last_id, device_id="test-device")
 
@@ -135,6 +135,6 @@ def test_pas_de_rattrapage_sur_plusieurs_jours_sautes(conn, template):
 
     # Les creneaux de lundi et mardi restent non acquittes en base (pas
     # de rattrapage automatique, mais pas de perte de donnees non plus).
-    lundi_dernier = local_db.get_occurrence(conn, "lun-21_2026-09-07")
+    lundi_dernier = local_db.get_occurrence(conn, "lundi-2130-2200_2026-09-07")
     assert lundi_dernier is not None
     assert lundi_dernier.acquitte is False

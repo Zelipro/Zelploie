@@ -1,9 +1,15 @@
 # Zelploie
 
-Application de suivi strict de l'emploi du temps hebdomadaire de Zeli (EPL Lomé / UTBM) :
-notification au début de chaque créneau, minuteur en direct pendant le créneau, écran de
-blocage plein écran avec bouton OK obligatoire à la fin. Windows, Ubuntu et Android.
-**iOS explicitement hors périmètre** (pas de Mac disponible pour compiler avec Xcode).
+> **Branche `claude/zelploie-v2`** : l'emploi du temps n'est plus embarqué dans l'app à la
+> compilation — il est saisi par l'utilisateur au premier lancement (texte collé ou fichier
+> importé) et stocké dans `~/.zelploie/emploi_zeli.txt`. Supprimer ce fichier relance la
+> configuration. Voir "Configurer l'emploi du temps" ci-dessous. La v1 (planning de Zeli en dur
+> dans le dépôt) reste disponible sur la branche `claude/zelploie-schedule-app-mn2nqx`.
+
+Application de suivi strict d'un emploi du temps hebdomadaire fixe : notification au début de
+chaque créneau, minuteur en direct pendant le créneau, écran de blocage plein écran avec bouton
+OK obligatoire à la fin. Windows, Ubuntu et Android. **iOS explicitement hors périmètre** (pas de
+Mac disponible pour compiler avec Xcode).
 
 Construit avec [Flet](https://flet.dev) (Python) — choix assumé malgré ses limites connues
 (voir "Limites connues" ci-dessous) — et [Supabase](https://supabase.com) pour la synchronisation
@@ -17,54 +23,66 @@ src/
   zelploie/
     models.py                    # modèles de données (aucune dépendance Flet/réseau)
     week_rule.py                 # résolution semaine A/B (parité ISO)
-    data/schedule_template.json  # LE planning — éditable sans recompiler, voir plus bas
+    schedule_text_format.py      # format texte + parseur de l'emploi du temps (v2)
+    data/exemple_emploi_du_temps.txt  # exemple bundlé (planning réel de Zeli), pas auto-chargé
     storage/local_db.py          # SQLite local — seule source de vérité au démarrage
     planning/occurrence_engine.py  # génération d'occurrences + résolution d'état (§5.1)
     sync/supabase_sync.py        # synchronisation temps réel multi-appareils
     notifications/               # notifications desktop (plyer) et Android (flet-android-notifications)
-    ui/                          # écrans Flet (minuteur, blocage, onboarding)
+    ui/                          # écrans Flet (minuteur, blocage, config planning, onboarding)
     tray/desktop_tray.py         # icône de barre système desktop (pystray)
 tests/                           # tests automatisés de toute la logique métier (pytest)
 sql/schema.sql                   # schéma Supabase + policy RLS (documentée)
+docs/prompt_ia_emploi_du_temps.md  # prompt à donner à une IA pour générer le fichier texte
 packaging/
   windows/install_autostart.ps1  # démarrage auto Windows (raccourci dans le dossier Démarrage)
   linux/install_autostart.sh     # démarrage auto Ubuntu (~/.config/autostart)
   android/                       # notes spécifiques au build Android
 ```
 
-## Modifier l'emploi du temps sans recompiler
+## Configurer l'emploi du temps
 
-Éditer directement `src/zelploie/data/schedule_template.json`. Chaque entrée :
+**Changement par rapport à la v1** : le planning n'est plus embarqué dans l'app à la
+compilation. Au tout premier lancement, Zelploie affiche un écran "Configurer ton emploi du
+temps" qui demande de coller le planning au format texte suivant (un créneau par ligne) :
 
-```json
-{
-  "id": "lun-07",
-  "jour_semaine": "lundi",
-  "heure_debut": "08:00",
-  "heure_fin": "10:00",
-  "nom_activite": "EL48 CM1",
-  "categorie": "cours_tp",
-  "salle": "I102",
-  "semaine_variante": null
-}
+```
+Jour | HeureDébut | HeureFin | Activité | Catégorie | Salle | Variante
+lundi | 08:00 | 10:00 | EL48 CM1 | cours_tp | I102 |
 ```
 
-- `categorie` : une de `cours_tp`, `travail_personnel`, `loisir`, `priere`, `neutre` (juste pour
-  la couleur affichée dans l'app — **tous les blocs déclenchent notification + écran de blocage,
-  sans exception**, quelle que soit leur catégorie — confirmé par Zeli).
-- `semaine_variante` : `null` (s'applique toutes les semaines), `"A"` ou `"B"` — voir ci-dessous.
-- Sur desktop, l'app doit être relancée pour relire le fichier (pas de hot-reload). Sur Android,
-  il faut reconstruire l'APK (le JSON est embarqué dans l'app) — si tu veux éditer le planning
-  depuis ton téléphone sans reconstruire, il faudrait déplacer ce fichier vers un stockage
-  externe ou une table Supabase séparée ; ce n'est pas fait actuellement (non demandé).
+- Colonnes obligatoires : Jour, HeureDébut, HeureFin, Activité.
+- Colonnes optionnelles : Catégorie (`cours_tp` / `travail_personnel` / `loisir` / `priere` /
+  `neutre` — sert uniquement à la couleur affichée : **tous les blocs déclenchent notification +
+  écran de blocage, sans exception**, quelle que soit leur catégorie, confirmé par Zeli),
+  Salle, Variante (`A`/`B`, pour un créneau qui alterne d'une semaine sur l'autre — voir
+  ci-dessous).
+- Le texte peut être collé directement dans l'écran, ou importé depuis un fichier `.txt`.
+- Une fois validé, il est enregistré dans **`~/.zelploie/emploi_zeli.txt`**. **Pour changer
+  d'emploi du temps : supprime ce fichier et relance l'app** — l'écran de configuration
+  réapparaît, exactement comme demandé.
+- Toute ligne mal formée est rejetée avec un message d'erreur explicite (numéro de ligne inclus)
+  — rien n'est deviné ni corrigé silencieusement (voir `schedule_text_format.py`).
 
-Aucune validation automatique de trous/chevauchements n'est faite au chargement — le script qui
-a servi à générer le JSON initial (`tests/test_occurrence_engine.py::test_occurrences_cover_full_day_without_gap_or_overlap`)
-sert de garde-fou : lance `pytest` après toute modification manuelle du planning.
+### Convertir une description libre avec une IA
+
+Le format ci-dessus est volontairement strict pour que l'app n'ait jamais à deviner. Si tu
+préfères décrire ton emploi du temps en langage libre, utilise le prompt fourni dans
+[`docs/prompt_ia_emploi_du_temps.md`](docs/prompt_ia_emploi_du_temps.md) avec l'IA de ton choix
+(Claude, ChatGPT...) : il convertit ta description en lignes au format attendu, en te posant des
+questions plutôt que de deviner si quelque chose n'est pas clair — puis colle sa réponse dans
+l'écran de configuration.
+
+### Exemple fourni
+
+`src/zelploie/data/exemple_emploi_du_temps.txt` contient le planning réel de Zeli (converti au
+nouveau format) — accessible via le bouton "Voir un exemple" de l'écran de configuration, pour
+avoir une base à copier-coller/adapter plutôt que de partir d'une page blanche. Il n'est jamais
+chargé automatiquement.
 
 ### Alternance semaine A / semaine B
 
-Deux créneaux du planning dépendent du type de semaine (confirmé avec Zeli) :
+Deux créneaux du planning fourni en exemple dépendent du type de semaine (confirmé avec Zeli) :
 
 | Jour | Créneau | Semaine A | Semaine B |
 |---|---|---|---|
@@ -195,11 +213,12 @@ d'origine).
    pip install -e . --group dev   # ou : pip install pytest pytest-asyncio
    pytest
    ```
-   24 tests couvrent notamment : recalcul correct après rallumage en plein milieu d'un créneau,
-   et le comportement "pas de rattrapage" après un ou plusieurs créneaux entièrement ratés.
+   43 tests couvrent notamment : le parseur du format texte (cas valides, erreurs, chevauchements),
+   le recalcul correct après rallumage en plein milieu d'un créneau, et le comportement "pas de
+   rattrapage" après un ou plusieurs créneaux entièrement ratés.
 
 2. **Notification de début à l'heure** : programmer un créneau de test dans les 2 prochaines
-   minutes (modifier temporairement `schedule_template.json`), vérifier la réception sur
+   minutes (modifier temporairement `~/.zelploie/emploi_zeli.txt`), vérifier la réception sur
    Windows, Ubuntu ET Android (verrouillé ET déverrouillé).
 
 3. **Écran de blocage à la fin** :
@@ -223,3 +242,10 @@ d'origine).
 
 7. **Démarrage automatique** : redémarrer le PC (Windows et Ubuntu séparément) et vérifier que
    Zelploie se relance tout seul, réduit dans la barre système.
+
+8. **Configuration du planning (v2)** : au premier lancement (ou après suppression de
+   `~/.zelploie/emploi_zeli.txt`), vérifier que l'écran de configuration apparaît bien avant
+   tout le reste ; coller un texte volontairement mal formé (jour invalide, heure invalide,
+   chevauchement) et vérifier que les erreurs exactes s'affichent sans rien enregistrer ;
+   valider un texte correct et vérifier que l'app démarre normalement dessus ; supprimer le
+   fichier et relancer pour confirmer que l'écran réapparaît.

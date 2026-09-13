@@ -8,25 +8,22 @@ recalculer le temps restant au démarrage."
 
 from __future__ import annotations
 
-import json
 import sqlite3
-from datetime import date, datetime, time, timedelta
+from datetime import date, datetime, timedelta
 from pathlib import Path
 from typing import Optional
 
-from ..models import (
-    ActivityOccurrence,
-    BlockCategory,
-    EtatCourant,
-    EtatPlanning,
-    JourSemaine,
-    ScheduleBlock,
-    SemaineVariante,
-)
+from ..models import ActivityOccurrence, EtatCourant, EtatPlanning, JourSemaine, ScheduleBlock
+from ..schedule_text_format import parse_schedule_file
 from ..storage.local_db import get_occurrence, list_occurrences_in_range, upsert_occurrence
 from ..week_rule import resolve_week_variant
 
-DEFAULT_TEMPLATE_PATH = Path(__file__).resolve().parent.parent / "data" / "schedule_template.json"
+# Fichier d'exemple bundlé avec l'app (planning réel de Zeli au format
+# texte v2) — utilisé par les tests et comme point de départ que Zeli
+# peut copier-coller lors du tout premier lancement. L'app elle-même
+# lit toujours depuis schedule_text_format.DEFAULT_SCHEDULE_PATH
+# (~/.zelploie/emploi_zeli.txt), pas depuis ce fichier bundlé.
+DEFAULT_TEMPLATE_PATH = Path(__file__).resolve().parent.parent / "data" / "exemple_emploi_du_temps.txt"
 
 # Fenêtre de notifications à l'avance (§5.2) : 14 jours, régénérée
 # régulièrement (à chaque lancement / retour au premier plan).
@@ -34,31 +31,15 @@ NOTIFICATION_WINDOW_DAYS = 14
 
 
 def load_schedule_template(path: Path | str = DEFAULT_TEMPLATE_PATH) -> list[ScheduleBlock]:
-    """Charge le gabarit hebdomadaire depuis le JSON éditable (§4.1).
+    """Charge le gabarit hebdomadaire depuis le fichier texte éditable
+    (§4.1, format v2 — voir schedule_text_format.py).
 
     C'est le SEUL endroit à modifier pour changer l'emploi du temps sans
-    recompiler l'app : éditer data/schedule_template.json (voir README).
+    recompiler l'app : éditer le fichier texte (voir README). Peut lever
+    schedule_text_format.ScheduleFormatError si le fichier ne respecte
+    pas le format attendu.
     """
-    raw = json.loads(Path(path).read_text(encoding="utf-8"))
-    blocks = []
-    for entry in raw:
-        blocks.append(
-            ScheduleBlock(
-                id=entry["id"],
-                jour_semaine=JourSemaine(entry["jour_semaine"]),
-                heure_debut=time.fromisoformat(entry["heure_debut"]),
-                heure_fin=time.fromisoformat(entry["heure_fin"]),
-                nom_activite=entry["nom_activite"],
-                categorie=BlockCategory(entry["categorie"]),
-                salle=entry.get("salle"),
-                semaine_variante=(
-                    SemaineVariante(entry["semaine_variante"])
-                    if entry.get("semaine_variante")
-                    else None
-                ),
-            )
-        )
-    return blocks
+    return parse_schedule_file(path)
 
 
 def generate_occurrences_for_date(d: date, template: list[ScheduleBlock]) -> list[ActivityOccurrence]:

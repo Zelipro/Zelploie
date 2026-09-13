@@ -1,0 +1,123 @@
+Jour | Début | Fin | Activité | Catégorie | Salle | Variante
+lundi | 04:00 | 04:06 | Sport rapide (6 min) | neutre |  | 
+lundi | 04:06 | 04:26 | Douche | neutre |  | 
+lundi | 04:26 | 05:30 | Lecture biblique et priere | priere |  | 
+lundi | 05:30 | 07:00 | EL48 - Anki + reprise du cours | travail_personnel |  | 
+lundi | 07:00 | 07:30 | Collation et preparation | neutre |  | 
+lundi | 07:30 | 08:00 | Trajet vers l'UTBM (CROUS -> UTBM) | neutre |  | 
+lundi | 08:00 | 10:00 | EL48 CM1 | cours_tp | I102 | 
+lundi | 10:00 | 10:15 | Pause | neutre |  | 
+lundi | 10:15 | 12:15 | SY45 CM1 | cours_tp | A219 | 
+lundi | 12:15 | 13:00 | Repas principal | neutre |  | 
+lundi | 13:00 | 16:00 | EL47 TP1 (groupe A) | cours_tp | B005 | A
+lundi | 13:00 | 16:00 | IF40 TP1 (groupe B) | cours_tp | B123 | B
+lundi | 16:00 | 16:15 | Pause | neutre |  | 
+lundi | 16:15 | 18:15 | IF40 TD1 | cours_tp | A112 | 
+lundi | 18:15 | 19:15 | LE01 TP5 | cours_tp | A217 | 
+lundi | 19:15 | 19:45 | Retour au CROUS (UTBM -> CROUS) | neutre |  | 
+lundi | 19:45 | 20:15 | Diner principal | neutre |  | 
+lundi | 20:15 | 20:45 | EL48 - revision rapide du jour | travail_personnel |  | 
+lundi | 20:45 | 21:00 | Temps libre | loisir |  | 
+lundi | 21:00 | 21:30 | Appel famille (court) | loisir |  | 
+lundi | 21:30 | 22:00 | Preparation au sommeil | neutre |  | 
+mardi | 04:00 | 04:06 | Sport rapide (6 min) | neutre |  | 
+mardi | 04:06 | 04:26 | Douche | neutre |  | 
+mardi | 04:26 | 05:30 | Lecture biblique et priere | priere |  | 
+mardi | 05:30 | 07:00 | IF40 - preparation CM (DSP / code C) | travail_personnel |  | 
+mardi | 07:00 | 08:00 | Collation et trajet | neutre |  | 
+mardi | 08:00 | 10:00 | EL48 TD1 | cours_tp | A111 | 
+mardi | 10:00 | 10:15 | Pause | neutre |  | 
+mardi | 10:15 | 12:15 | IF40 CM1 | cours_tp | A101 | 
+mardi | 12:15 | 13:00 | Repas principal | neutre |  | 
+mardi | 13:00 | 14:00 | Repos et lecture legere | loisir |  | 
+mardi | 14:00 | 16:00 | SY45 TD1 | cours_tp | A219 | 
+mardi | 16:00 | 16:30 | Pause et retour | neutre |  | 
+mardi | 16:30 | 18:00 | EL47 - serie d'exercices | travail_personnel |  | 
+mardi | 18:00 | 19:00 | Temps libre / detente | loisir |  | 
+mardi | 19:00 | 19:45 | Diner principal | neutre |  | 
+mardi | 19:45 | 20:45 | Appel famille | loisir |  | 
+mardi | 20:45 | 21:30 | Lecture legere et detente | loisir |  | 
+mardi | 21:30 | 22:00 | Preparation au sommeil | neutre |  | 
+mercredi | 04:00 | 04:06 | Sport rapide (6 min) | neutre |  | 
+mercredi | 04:06 | 04:26 | Douche | neutre |  | 
+mercredi | 04:26 | 05:30 | Lecture biblique et priere | priere |  | 
+mercredi | 05:30 | 07:00 | Temps libre / matinee calme | loisir |  | 
+mercredi | 07:00 | 08:30 | SY45 - exercices et Anki | travail_personnel |  | 
+mercredi | 08:30 | 09:00 | Collation | neutre |  | 
+mercredi | 09:00 | 10:00 | Repos et lecture legere | loisir |  | 
+mercredi | 10:00 | 10:15 | Pause | neutre |  | 
+mercredi | 10:15 | 12:15 | EL47 CM1 | cours_tp | I102 | 
+mercredi | 12:15 | 13:00 | Repas principal | neutre |  | 
+mercredi | 13:00 | 14:00 | Repos et preparation | loisir |  | 
+mercredi | 14:00 | 16:00 | LE01 TD2 | cours_tp | A217 | 
+mercredi | 16:00 | 16:30 | Pause | neutre |  | 
+mercredi | 16:30 | 18:00 | GE06 - lecture fondements marketing | travail_personnel |  | 
+mercredi | 18:00 | 19:00 | Temps libre / detente | loisir |  | 
+mercredi | 19:00 | 19:45 | Diner principal | neutre |  | 
+mercredi | 19:45 | 20:45 | Appel famille et proches | loisir |  | 
+mercredi | 20:45 | 21:30 | Detente calme | loisir |  | 
+mercredi | 21:30 | 22:00 | Preparation au sommeil | neutre |  | 
+jeudi | 04:00 | 04:06 | Sport rapide (6 min) | neutre |  | 
+jeudi | 04:06 | 04:26 | Douche | neutre |  | 
+jeudi | 04:26 | 05:30 | Lecture biblique et priere | priere |  | 
+jeudi | 05:30 | 07:00 | Temps libre | loisir |  | 
+jeudi | 07:00 | 08:00 | Collation et trajet | neutre |  | 
+jeudi | 08:00 | 09:30 | IF40 - finalisation projet hebdomadaire | travail_personnel |  | 
+jeudi | 09:30 | 10:15 | Pause et trajet | neutre |  | 
+jeudi | 10:15 | 13:15 | SY45 TP1 (groupe A) | cours_tp | B139y | A
+jeudi | 10:15 | 13:15 | EL48 TP2 (groupe B) | cours_tp | B003-B005 | B
+jeudi | 13:15 | 14:00 | Repas principal | neutre |  | 
+jeudi | 14:00 | 15:30 | EL48 - reprise du TP + Anki_Exo_2 | travail_personnel |  | 
+jeudi | 15:30 | 16:00 | Pause | neutre |  | 
+jeudi | 16:00 | 17:00 | Appel famille | loisir |  | 
+jeudi | 17:00 | 18:00 | Temps libre / detente | loisir |  | 
+jeudi | 18:00 | 18:45 | Diner principal | neutre |  | 
+jeudi | 18:45 | 20:15 | Creation musicale | loisir |  | 
+jeudi | 20:15 | 21:30 | Divertissement calme et detente | loisir |  | 
+jeudi | 21:30 | 22:00 | Preparation au sommeil | neutre |  | 
+vendredi | 04:00 | 04:06 | Sport rapide (6 min) | neutre |  | 
+vendredi | 04:06 | 04:26 | Douche | neutre |  | 
+vendredi | 04:26 | 05:30 | Lecture biblique et priere | priere |  | 
+vendredi | 05:30 | 07:00 | SY45 - finalisation exercices de la semaine | travail_personnel |  | 
+vendredi | 07:00 | 08:00 | Collation et trajet | neutre |  | 
+vendredi | 08:00 | 10:00 | EL47 TD3 | cours_tp | A102 | 
+vendredi | 10:00 | 10:15 | Pause | neutre |  | 
+vendredi | 10:15 | 11:45 | EL47 - bilan et approfondissement | travail_personnel |  | 
+vendredi | 11:45 | 12:45 | Repos et lecture legere | loisir |  | 
+vendredi | 12:45 | 14:15 | LE01 - vocabulaire, grammaire, expression | travail_personnel |  | 
+vendredi | 14:15 | 14:30 | Trajet | neutre |  | 
+vendredi | 14:30 | 16:00 | GE06 CM1 | cours_tp | A218 | 
+vendredi | 16:00 | 16:15 | Pause | neutre |  | 
+vendredi | 16:15 | 18:15 | GE06 TD1 | cours_tp | A218 | 
+vendredi | 18:15 | 18:45 | Retour au CROUS (UTBM -> CROUS) | neutre |  | 
+vendredi | 18:45 | 19:30 | Diner principal | neutre |  | 
+vendredi | 19:30 | 20:00 | GE06 - revision rapide du jour | travail_personnel |  | 
+vendredi | 20:00 | 20:30 | Temps libre | loisir |  | 
+vendredi | 20:30 | 21:15 | Appel famille prolonge | loisir |  | 
+vendredi | 21:15 | 22:00 | Detente et preparation du week-end | loisir |  | 
+samedi | 05:30 | 05:36 | Sport rapide (6 min) | neutre |  | 
+samedi | 05:36 | 05:56 | Douche | neutre |  | 
+samedi | 05:56 | 07:00 | Lecture biblique et priere | priere |  | 
+samedi | 07:00 | 07:30 | Collation | neutre |  | 
+samedi | 07:30 | 10:30 | EL48 - session longue : TD + Anki_Exo_2 | travail_personnel |  | 
+samedi | 10:30 | 10:45 | Pause | neutre |  | 
+samedi | 10:45 | 13:45 | SY45 - session longue : automates, exercices | travail_personnel |  | 
+samedi | 13:45 | 14:30 | Repas principal et repos | neutre |  | 
+samedi | 14:30 | 16:00 | GE06 - lecture approfondie et cas pratiques | travail_personnel |  | 
+samedi | 16:00 | 17:00 | Temps libre / detente | loisir |  | 
+samedi | 17:00 | 19:00 | Creation musicale : session longue | loisir |  | 
+samedi | 19:00 | 19:30 | Diner principal | neutre |  | 
+samedi | 19:30 | 20:30 | Appel familial prolonge | loisir |  | 
+samedi | 20:30 | 22:00 | Detente et preparation du dimanche | loisir |  | 
+dimanche | 06:00 | 06:06 | Sport rapide (6 min) | neutre |  | 
+dimanche | 06:06 | 06:26 | Douche | neutre |  | 
+dimanche | 06:26 | 07:30 | Lecture biblique et priere | priere |  | 
+dimanche | 07:30 | 08:00 | Collation | neutre |  | 
+dimanche | 08:00 | 12:00 | Emissions chretiennes (temps spirituel) | priere |  | 
+dimanche | 12:00 | 12:30 | Repas principal | neutre |  | 
+dimanche | 12:30 | 15:30 | EL47 - revision complete | travail_personnel |  | 
+dimanche | 15:30 | 15:45 | Pause | neutre |  | 
+dimanche | 15:45 | 18:45 | IF40 - DSP, TP, projet | travail_personnel |  | 
+dimanche | 18:45 | 19:15 | Diner principal | neutre |  | 
+dimanche | 19:15 | 21:45 | LE01 - comprehension ecrite et orale approfondie | travail_personnel |  | 
+dimanche | 21:45 | 22:00 | Detente et appel rapide | loisir |  | 

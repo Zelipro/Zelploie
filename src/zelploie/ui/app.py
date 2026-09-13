@@ -30,10 +30,12 @@ import flet as ft
 from ..models import ActivityOccurrence, EtatCourant
 from ..notifications import desktop as desktop_notif
 from ..planning import occurrence_engine
+from ..schedule_text_format import DEFAULT_SCHEDULE_PATH
 from ..storage import local_db
 from ..sync.supabase_sync import SupabaseConfig, SupabaseConfigError, SupabaseSync
 from . import onboarding
 from .block_screen import build_block_screen
+from .schedule_setup import build_schedule_setup_screen
 from .timer_view import build_timer_view
 
 logger = logging.getLogger(__name__)
@@ -47,7 +49,7 @@ class ZelploieApp:
         self.page = page
         self.conn = local_db.connect()
         self.device_id = local_db.get_or_create_device_id(self.conn)
-        self.template = occurrence_engine.load_schedule_template()
+        self.template = None  # chargé une fois l'emploi du temps disponible, voir _ensure_schedule_ready
 
         self.is_android = page.platform in (ft.PagePlatform.ANDROID, ft.PagePlatform.ANDROID_TV)
         self.is_desktop = page.platform in (ft.PagePlatform.WINDOWS, ft.PagePlatform.LINUX, ft.PagePlatform.MACOS)
@@ -95,6 +97,27 @@ class ZelploieApp:
 
         self.page.on_app_lifecycle_state_change = self._handle_lifecycle_change
 
+        await self._ensure_schedule_ready()
+
+    async def _ensure_schedule_ready(self) -> None:
+        """Étape ajoutée en v2 (demande de Zeli) : au tout premier
+        lancement — ou après suppression de ~/.zelploie/emploi_zeli.txt —
+        demander l'emploi du temps avant de démarrer normalement, plutôt
+        que d'embarquer un planning figé dans l'app compilée."""
+        if DEFAULT_SCHEDULE_PATH.exists():
+            self.template = occurrence_engine.load_schedule_template(DEFAULT_SCHEDULE_PATH)
+            await self._proceed_after_schedule_ready()
+            return
+
+        exemple_texte = occurrence_engine.DEFAULT_TEMPLATE_PATH.read_text(encoding="utf-8")
+        self.root.content = build_schedule_setup_screen(self.page, self._finish_schedule_setup, exemple_texte)
+        self.page.update()
+
+    async def _finish_schedule_setup(self) -> None:
+        self.template = occurrence_engine.load_schedule_template(DEFAULT_SCHEDULE_PATH)
+        await self._proceed_after_schedule_ready()
+
+    async def _proceed_after_schedule_ready(self) -> None:
         if self.is_android and onboarding.onboarding_needed(self.conn):
             self.root.content = onboarding.build_onboarding_screen(
                 self.android_notifs, self.conn, self._finish_onboarding
