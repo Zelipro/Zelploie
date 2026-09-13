@@ -45,7 +45,7 @@ def build_timer_view(etat: EtatPlanning, now: datetime | None = None) -> ft.Cont
             spacing=20,
             controls=[
                 ft.Container(
-                    padding=ft.padding.symmetric(horizontal=16, vertical=6),
+                    padding=ft.Padding.symmetric(horizontal=16, vertical=6),
                     border_radius=20,
                     bgcolor=couleur,
                     content=ft.Text(
